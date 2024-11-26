@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: black;
+    box-sizing: border-box;
+       
 }
 
 :root {
@@ -41,37 +42,41 @@
     --danger:#FF5959;
     /* cores */
     --pink:#FF598B;
-
+    zoom: 45%;
 }
 
-body {
-    & h2 {
-        font:var(--heading-md) ;
-        color: var(--text-heading);
-        }
-    & h3 {
-    font:var(--heading-sm) ;
-    color: var(--text-heading);
-    }
-    & p {
-        font: var(--text-sm);
-        color: var(--text-body);
 
-    }
+body{
+    background-color: var(--shape-background);
+    margin: 1.25rem;
+    overflow: hidden;
 }
 
-aside {  
-    & h1{
-    font: var(--logo);
-    color: var(--pink);
-    }
-
+aside{
     & p{
-        font:var(--text-md);
+        font: var(--text-md);
         color: var(--text-heading);
         font-weight: 300;
-        
-       
-
     }
+}
+
+h1{
+    font: var(--logo);
+    color: var(--pink);
+
+}
+h2{
+    font: var(--heading-md);
+    color: var(--text-heading);
+    padding-bottom:2.5rem ;
+}
+
+h3{
+    font: var(--heading-sm);
+    color: var(--text-heading);
+ 
+}
+
+img{
+    max-width: 100%;
 }

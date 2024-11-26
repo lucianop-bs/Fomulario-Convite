@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
 
-    <title>Formulário Convite</title>
-</head>
-<body>
-    <div class="app">
-        <main>
-            <div class="main-container">
-                <h2>Crie seu convite</h2>
-                <div class="calendario">
-                    <img src="/assets/icons/icone-calendario.svg" alt="icone calendario">
-                    <h3>Sobre o evento</h3>
+    <title>Festivite</title>
+  </head>
+  <body>
+    <div id="app">
+      <aside>
+        <img class="bk" src="/assets/images/Background.png" alt="Background">
+         <div class="aside-container">
+          <img src="/assets/images/emoji.svg" alt="logo">
+          <h1>Festivite</h1>
+          <p>Crie um convite digital para o seu evento</p>
+          
+          
+        </div>
+        
+        
+      </aside>
+
+      <main id="rolagem">
+        <div class="main-container">
+          <h2>Crie seu convite</h2>
+            <div class="icons">
+            <img src="/assets/icons/icone-calendario.svg" alt="icone calendario">
+              <h3>Sobre o evento</h3>   
+          </div> 
+          <form action="">
+            <fieldset class="infor-cliente">
+              <legend>Título</legend>
+              <div class="input-wrapper">
+                <label for="name"></label>
+                <input name="name" type="text" id="name" placeholder="Nome do evento">
+              </div>
+              <fieldset class="infor-cliente">
+                <legend>Inicio</legend>
+                <div class="input-wrapper">
+                  <label for="data-inicio"></label>
+                  <input name="sata-inicio" type="date" id="data-inicio" placeholder="Nome do evento">
                 </div>
-                <p>Titulo</p>      
-            </div>
-
-        </main>
-        <aside>
-            <div class="aside-container">
-                <header>
-                    <img src="/assets/images/emoji.svg" alt="emoji da logo">
-                    <h1>Festivite</h1>
-                    <p>Crie um convite digital para seu evento</p>
-                </header>
-                <img src="/assets/images/Background.png" alt=" bolo com vela">
-            </div>
-        </aside>
+                <fieldset class="infor-cliente">
+                  <legend>Fim</legend>
+                  <div class="input-wrapper">
+                    <label for="data-fim"></label>
+                    <input name="data-fim" type="date" id="data-fim" placeholder="Nome do evento">
+                  </div>
+              
+            </fieldset>
+          </form>
+      </main>
     </div>
-     
-    
-</body>
+  </body>
 </html>
