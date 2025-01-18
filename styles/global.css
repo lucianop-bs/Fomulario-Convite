@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
        
 }
 
@@ -79,4 +80,12 @@ h3{
 
 img{
     max-width: 100%;
+}
+main{
+    & label{
+        font: var(--text-sm);
+        color:var(--text-body);
+        margin-bottom:.75rem;
+        
+    }
 }

@@ -1,0 +1,13 @@
+@import url(fields/index.css);
+fieldset{
+    border: none;   
+    margin-top: 1rem;
+    width: 100%;
+    
+}
+.inicio-fim{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+   
+}
