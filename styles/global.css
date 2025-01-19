@@ -85,7 +85,9 @@ main{
     & label{
         font: var(--text-sm);
         color:var(--text-body);
-        margin-bottom:.75rem;
+        
+        
         
     }
 }
+
