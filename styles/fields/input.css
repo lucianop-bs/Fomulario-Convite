@@ -19,8 +19,15 @@ input::placeholder{
 
 input{
     margin-top:0.75rem ;
+    margin-bottom: 0.75rem;
     font: var(--text-md);
     color:var(--text-heading);
+    &:hover{
+        border: 1px solid var(--brand-light);
+    }
+    
+}
+.contorno{
     &:hover{
         border: 1px solid var(--brand-light);
     }

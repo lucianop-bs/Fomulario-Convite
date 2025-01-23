@@ -2,7 +2,7 @@
 
 fieldset{
     border: none;   
-    margin-top: 1rem;
+    /* margin-top: 1.5rem; */
     width: 100%;
     
 }
@@ -12,3 +12,5 @@ fieldset{
     gap: 1rem;
    
 }
+
+ 

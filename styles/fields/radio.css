@@ -41,11 +41,6 @@
     border-radius: 0.25rem;
     text-align: center;
 
-
-    /* &.active{
-        background-color: var(--shape-button);
-        font-weight: 600;
-    } */
     
     & label{
         font: var(--font-family);
