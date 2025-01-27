@@ -77,6 +77,61 @@ textarea{
 #person{
   & label {
     color:#ffffff;
+  
   }
 }
 
+/* .form-container {
+  text-align: center;
+} */
+
+.color-options {
+  display: flex;
+  gap: .75rem;
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+
+ 
+}
+
+/* Estilo base do input radio */
+input[type="radio"] {
+  display: none; /* Esconde o botão padrão */
+}
+
+/* Estilo para o círculo */
+.color-label {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  border: 6px solid #333; /* Borda padrão */
+
+  &:hover{
+    border: 6px solid var(--shape-hover);
+  }
+  
+}
+
+
+
+/* Cores dos círculos */
+.color-label[data-color="blue"] { background-color: var(--brand-light); }
+.color-label[data-color="navy"] { background-color: #6A59FF;}
+.color-label[data-color="purple"] { background-color: #B259FF; }
+.color-label[data-color="fuschia"] { background-color: #FF59F9; }
+.color-label[data-color="pink"] { background-color: #FF598B; }
+.color-label[data-color="danger"] { background-color: #FF5959; }
+.color-label[data-color="orange"] { background-color: #FF8B59; }
+.color-label[data-color="yellow"] { background-color: #FFCD59; }
+.color-label[data-color="lime"] { background-color: #E1FF59; }
+.color-label[data-color="green"] { background-color: #59FF91; }
+.color-label[data-color="cyan"] { background-color: #59FFF9; }
+
+/* Efeito quando selecionado */
+input[type="radio"]:checked + span {
+  outline: 2px solid #099ae7;
+  
+   /* Destaque na borda */
+   
+}
