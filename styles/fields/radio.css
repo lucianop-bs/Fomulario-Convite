@@ -48,7 +48,7 @@
         font-size:var(--text-sm);
     }
     
-    &:hover, &:focus-within {
+    &:hover {
         background-color: var(--shape-button);
         font-weight: 600;
         stroke: #59B2FF;

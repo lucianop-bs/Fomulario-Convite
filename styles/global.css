@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
+    
        
 }
 
@@ -53,6 +54,7 @@ body{
 }
 
 aside{
+    overflow: hidden;
     & p{
         font: var(--text-md);
         color: var(--text-heading);
@@ -81,6 +83,7 @@ img{
     max-width: 100%;
 }
 main{
+    overflow: hidden;
     & label{
         font: var(--text-sm);
         color:var(--text-body);
