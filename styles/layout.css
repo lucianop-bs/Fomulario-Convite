@@ -196,6 +196,8 @@ input[type="radio"]:checked + span {
   height: 48px;
   position: relative;
 
+  margin-top: 12px;
+
   align-items: center;
   gap: 12px;
   & input {
@@ -251,4 +253,52 @@ input[type="radio"]:checked + span {
 .texto {
   position: absolute;
   margin-left: 76px;
+}
+
+.arquivos {
+  display: none;
+}
+
+.selecionar-retangulo {
+  display: flex;
+  width: 119px;
+  height: 40px;
+  background-color: var(--shape-button);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: red;
+  }
+}
+
+.grid-upload {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.caixa-mestre {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 12px;
+  position: relative;
+}
+
+.texto-padrao {
+  position: absolute;
+  margin-left: 24px;
+}
+.texto-padrao::after {
+  content: "Nenhum arquivo selecionado";
+  font: var(--text-sm);
+  color: var(--text-heading);
+}
+
+/* #foto:active ~ .texto-padrao::after {
+  content: "chinela";
+} */
+#foto:focus-within ~ .texto-padrao::after {
+  content: "calma";
 }
