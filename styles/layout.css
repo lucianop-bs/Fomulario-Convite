@@ -11,7 +11,7 @@ main {
   border-radius: 0.75rem;
   overflow: auto;
   margin-right: auto;
-  width: 51.25rem;
+  width: 52.25rem;
   height: 45.5rem;
   color: white;
   padding: 5rem 8.125rem 5rem 8.125rem;
@@ -269,7 +269,7 @@ input[type="radio"]:checked + span {
   justify-content: center;
 
   &:hover {
-    background-color: red;
+    background-color: var(--shape-hover);
   }
 }
 
@@ -294,11 +294,4 @@ input[type="radio"]:checked + span {
   content: "Nenhum arquivo selecionado";
   font: var(--text-sm);
   color: var(--text-heading);
-}
-
-/* #foto:active ~ .texto-padrao::after {
-  content: "chinela";
-} */
-#foto:focus-within ~ .texto-padrao::after {
-  content: "calma";
 }

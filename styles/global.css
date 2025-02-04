@@ -1,96 +1,116 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-family);
-    
-       
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
 }
 
 :root {
-    /* estilo */
-        /* fonte corpo */
-    --font-family:"Open Sans", sans-serif;
-    --text-md:400  1rem var(--font-family);
-    --text-sm:400 .875rem var(--font-family);
-    --text-xs:400 .75rem var(--font-family);
-    
-    --font-family-heading:"Baloo 2", sans-serif;
-    --heading-md:700 1.75rem var(--font-family-heading);
-    --heading-sm:700 1.125rem var(--font-family-heading);
+  /* estilo */
+  /* fonte corpo */
+  --font-family: "Open Sans", sans-serif;
+  --text-md: 400 1rem var(--font-family);
+  --text-sm: 400 0.875rem var(--font-family);
+  --text-xs: 400 0.75rem var(--font-family);
 
+  --font-family-heading: "Baloo 2", sans-serif;
+  --heading-md: 700 1.75rem var(--font-family-heading);
+  --heading-sm: 700 1.125rem var(--font-family-heading);
 
-    --font-family-logo: "Leckerli One", sans-serif;
-    --logo: 400 2.5rem var(--font-family-logo);
+  --font-family-logo: "Leckerli One", sans-serif;
+  --logo: 400 2.5rem var(--font-family-logo);
 
-    /* cores */
+  /* cores */
 
-    --brand-light:#59B2FF;
-    --brand-mid:#3487CF;
-    --brand-dark:#1D6FB6;
-    /* texto */
-    --text-body:#C8CDD0;
-    --text-heading:#F9F9F9;
-    /* shape */
-    --shape-background:#131516;
-    --shape-body:#212427;
-    --shape-button:#2D3136;
-    --shape-hover:#383D42;
-    /* input */
-    --input-base:#1C1F21;
-    --input-stroke:#363B40;
-    --input-placeholder:#869198;
-    /* feedback */
-    --danger:#FF5959;
-    /* cores */
-    --pink:#FF598B;
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
+  /* texto */
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+  /* shape */
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
+  /* input */
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+  /* feedback */
+  --danger: #ff5959;
+  /* cores */
+  --pink: #ff598b;
 }
 
-
-body{
-    background-color: var(--shape-background);
-    margin: 1.25rem;
-    overflow: hidden;
+body {
+  background-color: var(--shape-background);
+  margin: 1.25rem;
+  overflow-x: hidden; /* Esconde a barra horizontal */
+  overflow-y: auto; /* Mantém a barra vertical */
 }
 
-aside{
-    overflow: hidden;
-    & p{
-        font: var(--text-md);
-        color: var(--text-heading);
-        font-weight: 300;
-    }
-}
-
-h1{
-    font: var(--logo);
-    color: var(--pink);
-
-}
-h2{
-    font: var(--heading-md);
+aside {
+  overflow: hidden;
+  & p {
+    font: var(--text-md);
     color: var(--text-heading);
-    padding-bottom:2.5rem ;
+    font-weight: 300;
+  }
 }
 
-h3{
-    font: var(--heading-sm);
-    color: var(--text-heading);
- 
+h1 {
+  font: var(--logo);
+  color: var(--pink);
+}
+h2 {
+  font: var(--heading-md);
+  color: var(--text-heading);
+  padding-bottom: 2.5rem;
 }
 
-img{
-    max-width: 100%;
-}
-main{
-    overflow: hidden;
-    & label{
-        font: var(--text-sm);
-        color:var(--text-body);
-        
-        
-        
-        
-    }
+h3 {
+  font: var(--heading-sm);
+  color: var(--text-heading);
 }
 
+img {
+  max-width: 100%;
+}
+main {
+  overflow: hidden;
+  & label {
+    font: var(--text-sm);
+    color: var(--text-body);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem vertical */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--input-base); /* Cor do "trilho" da barra */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Cor da barra de rolagem */
+  border-radius: 5px; /* Borda arredondada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor ao passar o mouse */
+}
+
+/* Aplicamos o overflow-x no html e body */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Estilização da barra de rolagem (como mostrado antes) */
+::-webkit-scrollbar {
+  width: 10px;
+}
