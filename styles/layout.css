@@ -267,9 +267,12 @@ input[type="radio"]:checked + span {
   border-radius: 8px;
   align-items: center;
   justify-content: center;
-
   &:hover {
     background-color: var(--shape-hover);
+  }
+
+  .teste-1 {
+    margin-left: 8px;
   }
 }
 
@@ -292,6 +295,60 @@ input[type="radio"]:checked + span {
 }
 .texto-padrao::after {
   content: "Nenhum arquivo selecionado";
+  font: var(--text-md);
+  color: var(--input-placeholder);
+}
+
+.contato {
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.terms-wrapper {
+  display: flex;
+  margin-top: 4px;
+  gap: 0.75;
+  align-items: flex-start;
+}
+
+.checkbox-wrapper {
+  position: relative;
+
+  #terms {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  .checkbox-image {
+    flex: 0 0 1.5rem;
+    height: 1.5rem;
+    margin-right: 12px;
+
+    background-image: url(../assets/icons/check.svg);
+    background-repeat: no-repeat;
+  }
+
+  &:has(:checked) {
+    .checkbox-image {
+      background-image: url(../assets/icons/checked.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.contato {
+  margin-bottom: 48px;
+}
+.terms {
   font: var(--text-sm);
-  color: var(--text-heading);
+  color: var(--text-body);
+}
+a {
+  color: var(--brand-light);
+}
+
+.termos-uso {
+  padding-top: 40px;
+  border-top: 1px solid var(--input-stroke);
 }
