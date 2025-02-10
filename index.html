@@ -50,7 +50,7 @@
           <fieldset class="infor-cliente">
             <div>
               <label class="espaco-sobre" for="name">Título</label>
-              <input name="name" type="text" id="name" placeholder="Nome do evento" required>
+              <input name="name" type="text" id="name" placeholder="Nome do evento">
 
             </div>
           </fieldset>
@@ -314,7 +314,11 @@
             </div>
             <div>
               <label class="espaco-sobre" for="name">Nome</label>
-              <input name="name" type="text" id="name" placeholder="Nome completo" required>
+              <input name="name" type="text" id="name" placeholder="Nome completo" class=required required>
+              <div class="error">
+                <img src="./assets/icons/circle-alert.svg" alt="">
+                <span>Campo obrigatório</span>
+              </div>
             </div>
             <div class="email-tel inicio-fim">
               <div>
@@ -323,7 +327,7 @@
               </div>
               <div>
                 <label class="espaco-sobre" for="name">Nome</label>
-                <input name="name" type="tel" id="name" placeholder="(99) 99999-9999" required>
+                <input name="name" type="tel" id="name" placeholder="(99) 99999-9999">
               </div>
             </div>
           </fieldset>
@@ -331,21 +335,27 @@
             <fieldset class="termos-uso">
               <div class="terms-wrapper input-wrapper checkbox-wrapper">
                 <div class="checkbox-image"></div>
-                <input type="checkbox" name="terms" id="terms" required>
+                <input type="checkbox" name="terms" id="terms">
                 <label for="terms">Li e concordo com os <a class="color-text" href="">Termos e Condições</a> e com a <a
                     href="">Política de
                     Privacidade</a></label>
               </div>
               <div class="terms-wrapper input-wrapper checkbox-wrapper">
                 <div class="checkbox-image"></div>
-                <input type="checkbox" name="terms" id="terms" required>
+                <input type="checkbox" name="terms" id="terms">
                 <label for="terms">Aceito receber atualizações e promoções por e-mail</label>
               </div>
               <div class="terms-wrapper input-wrapper checkbox-wrapper">
                 <div class="checkbox-image"></div>
-                <input type="checkbox" name="terms" id="terms" required>
+                <input type="checkbox" name="terms" id="terms">
                 <label for="terms">Aceito receber atualizações e promoções por SMS</label>
               </div>
+            </fieldset>
+            <fieldset class="button-caixa">
+              <button class="button-final">
+                <img class="img-button" src="./assets/icons/icone-tickt.svg" alt="">
+                <span class="text-button">Gerar convite</span>
+              </button>
             </fieldset>
           </footer>
         </form>

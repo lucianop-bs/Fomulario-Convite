@@ -351,4 +351,46 @@ a {
 .termos-uso {
   padding-top: 40px;
   border-top: 1px solid var(--input-stroke);
+  margin-bottom: 48px;
+}
+
+.button-final {
+  all: unset;
+  width: 177px;
+  height: 48px;
+  background-color: var(--brand-dark);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.text-button {
+  position: absolute;
+  text-align: center;
+  padding-left: 52px;
+}
+
+.img-button {
+  margin-left: 20px;
+}
+
+.button-caixa {
+  display: flex;
+  justify-content: end;
+}
+
+input:required:invalid {
+  border: 1px solid var(--danger);
+}
+.error {
+  color: var(--danger);
+  font: var(--text-xs);
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+
+  & span {
+    margin-left: 8px;
+  }
 }

@@ -1,16 +1,12 @@
 @import url(fields/index.css);
 
-fieldset{
-    border: none;   
-    /* margin-top: 1.5rem; */
-    width: 100%;
-    
-}
-.inicio-fim{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-   
-}
+fieldset {
+  border: none;
 
- 
+  width: 100%;
+}
+.inicio-fim {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
